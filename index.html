@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Tilak Pednekar</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          I am a 2024 MCA graduate with 6 months of hands-on experience as a System-Administrator at Star Knowledge Ventures, Mysuru.
+          I have expertise in-platforms such as Microsoft 365, Microsoft Azure, Linux, and Windows Server,along with strong knowledge of networking concepts. 
+          My role involved system hardware management, domain joining, hosting, and user provisioning.
+           I am also certified in Microsoft Azure Fundamentals (AZ-900),strengthening my foundational understanding of cloud services.
+       </p>
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a> 
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="assets/Tilak_resume-1.pdf" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/prof2.jpg" alt="" class="mobile-hide" />
+    </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/prof.jpg" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>System Administrator</h3>
+        <p>
+          I am from Karwar, Karnataka, and currently working as a System Administrator at Star Knowledge Ventures, Mysuru, since November 2024.
+           I hold a Master of Computer Applications (MCA) degree from Visvesvaraya Technological University, Mysuru, completed in September 2024 with a CGPA of 8.4. Prior to this, 
+           I earned my Bachelor of Computer Applications (BCA) and completed my schooling in my hometown, Karwar.
+        Beyond my professional interests, I am passionate about adventure activities such as travelling and trekking, which keep me energized and inspired.
+        </p>
+        <a href="#" class="btn"></a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- services -->
+
+    <section class="services" id="services">
+      <h2 class="heading"><span>Skills</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <img src="images/microsoft365.svg" alt="Azure Logo" class="service-icon" />
+          <h3>Microsoft 365</h3>
+          <p>
+            I have hands-on experience in managing Office 365 administrative tasks, including user management, 
+              license assignments, and configuring security settings. 
+          </p>
+          <!-- Hidden Content -->
+          <div class="more-info" style="display: none;">
+            <p>
+              I am proficient in Intune for device management and policy enforcement, ensuring endpoint compliance and protection. 
+              I’ve also worked with Microsoft Defender for Endpoint to secure enterprise systems and have experience with 
+              Microsoft Exchange Online for managing mail flow, spam filtering, and mailbox configurations.
+
+            </p>
+          </div>
+          <!-- Button with onclick -->
+          <a href="javascript:void(0);" class="btn" onclick="toggleMore(this)">Read More</a>
+        </div>
+
+
+        <div class="services-box">
+          <img src="images/linux.svg" alt="Azure Logo" class="service-icon" />
+          <h3>Linux</h3>
+          <p>
+            I have solid proficiency in Linux commands and shell scripting, which I use for system automation and administration tasks.
+          </p>
+          <!-- Hidden Content -->
+          <div class="more-info" style="display: none;">
+            <p>I’ve successfully hosted websites on Apache/Linux-based web servers, set up Samba file sharing services, 
+              and deployed a Linux-based mail server for internal communication. My hands-on experience also includes configuring user permissions,
+               managing services, and performing routine server maintenance.</p>
+          </div>
+          <!-- Button with onclick -->
+          <a href="javascript:void(0);" class="btn" onclick="toggleMore(this)">Read More</a>
+        </div>
+
+
+        <div class="services-box">
+          <!-- Azure SVG icon -->
+          <img src="images/azure.svg" alt="Azure Logo" class="service-icon" />
+          <h3>Azure</h3>
+          <p>I have practical experience working with several core Azure services, including Virtual Machines (VMs), 
+            Virtual Networks (VNets), Azure Storage, and Identity & Access Management (IAM).</p>
+          <!-- Hidden Content -->
+          <div class="more-info" style="display: none;">
+            <p>I'm familiar with monitoring tools like Azure Monitor and Azure Sentinel for threat detection and incident response. 
+              I have successfully completed the AZ-900 certification,
+               which reflects my foundational knowledge of Azure cloud services and best practices.</p>
+          </div>
+          <!-- Button with onclick -->
+          <a href="javascript:void(0);" class="btn" onclick="toggleMore(this)">Read More</a>
+        </div>
+
+
+        <div class="services-box">
+          <img src="images/network.svg" alt="Azure Logo" class="service-icon" />
+          <h3>Networking</h3>
+          <p>I have strong knowledge of computer networking concepts, including subnetting, DHCP configuration, and DNS setup.</p>
+          <!-- Hidden Content -->
+          <div class="more-info" style="display: none;">
+            <p>I also have hands-on experience with the Sophos Firewall, where I have configured ISP failover, 
+              created firewall and NAT policies, and managed web filtering to block unauthorized or harmful sites. 
+             I can troubleshoot network connectivity issues and ensure a secure and reliable IT infrastructure..</p>
+          </div>
+          <!-- Button with onclick -->
+          <a href="javascript:void(0);" class="btn" onclick="toggleMore(this)">Read More</a>
+        </div>
+        
+
+        <div class="services-box">
+          <img src="images/wordpress.svg" alt="Azure Logo" class="service-icon" />
+          <h3>Wordpress</h3>
+          <p>
+            I have developed and deployed professional websites like:
+            🌐 anandicream.shop
+            🌐 sgdecoraters.in
+          </p>
+          <!-- Hidden Content -->
+          <div class="more-info" style="display: none;">
+            <p>I am skilled in designing and customizing websites using WordPress, 
+              with advanced experience in Elementor page builder and hPanel hosting control panel. </p>
+          </div>
+          <!-- Button with onclick -->
+          <a href="javascript:void(0);" class="btn" onclick="toggleMore(this)">Read More</a>
+        </div>
+
+      </div>
+    </section>
+    
+
+
+
+    <!-- Portfolio Section -->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading"><span>Project</span></h2>
+
+      <div class="portfolio-container">
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Web Hosting in Ubuntu Server</h3>
+              <p class="card-description">
+                Web hosting on an Ubuntu server in Azure and joining the domain using the correct IP.
+              </p>
+              <a href="#" class="card-link">Read More</a>
+            </div>
+          </div>
+          <!-- Add more cards here with different content -->
+        </div>
+        
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">personal portfolio</h3>
+              <p class="card-description">
+                Created an Personal portfolio using HTML CSS and java script.
+              </p>
+              <a href="#" class="card-link">Read More</a>
+            </div>
+          </div>
+          <!-- Add more cards here with different content -->
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Wwordprss website</h3>
+              <p class="card-description">
+                Developed an wordpress website called anandicream .
+              </p>
+              <a href="#" class="card-link">Read More</a>
+            </div>
+          </div>
+          <!-- Add more cards here with different content -->
+        </div>
+
+       
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Tilak Pednekar | All Rights Reserved|</p>
+      </div>
+
+      <div class="footer-iconTap">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+
+
+    <script>
+      function toggleMore(button) {
+        const moreInfo = button.previousElementSibling;
+        if (moreInfo.style.display === "none") {
+          moreInfo.style.display = "block";
+          button.textContent = "Read Less";
+        } else {
+          moreInfo.style.display = "none";
+          button.textContent = "Read More";
+        }
+      }
+    </script>
+    
+
+
+  </body>
+</html>
